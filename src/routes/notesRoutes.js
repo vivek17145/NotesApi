@@ -9,8 +9,8 @@ noteRouter.get("/get/:id", auth, getSingleNotes);
 
 noteRouter.post("/create", auth, createNote);
 
-noteRouter.delete("/:id", auth, deleteNote);
+noteRouter.delete("/delete/:id", auth, deleteNote);
 
-noteRouter.put("/:id", auth, updateNote);
+noteRouter.put("/update/:id", auth, updateNote);
 
 module.exports = noteRouter;
